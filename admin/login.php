@@ -10,13 +10,14 @@ if( $user->is_logged_in() ){ header('Location: index.php'); }
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Login</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+
+  <link rel="stylesheet" href="../style/main.css?version=1">
 </head>
 <body>
 
-<div id="login">
+<!-- <div id="login"> -->
 
 	<?php
 
@@ -34,18 +35,19 @@ if( $user->is_logged_in() ){ header('Location: index.php'); }
 		
 
 		} else {
-			$message = '<p class="error">Wrong username or password</p>';
+			$message = '<div align="center" class="error"><p>Wrong username or password</p></div>';
 		}
 
 	}//end if submit
 
 	if(isset($message)){ echo $message; }
 	?>
-
+	<div id="login">
 	<form action="" method="post">
-	<p><label>Username</label><input type="text" name="username" value=""  /></p>
-	<p><label>Password</label><input type="password" name="password" value=""  /></p>
-	<p><label></label><input type="submit" name="submit" value="Login"  /></p>
+	<h3 align="center">Admin login:</h3>
+	<p align="center"><label>Username:</label><input type="text" name="username" value="" size="30" /></p>
+	<p align="center"><label>Password: </label><input type="password" name="password" value="" size="30"  /></p>
+	<p align="center"><label></label><input type="submit" id="btn" name="submit" value="Login"  /></p>
 	</form>
 
 </div>

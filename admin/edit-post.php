@@ -9,8 +9,9 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 <head>
   <meta charset="utf-8">
   <title>Admin - Edit Post</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+  
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+  
   <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
   <script>
           tinymce.init({

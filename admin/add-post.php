@@ -9,8 +9,9 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 <head>
   <meta charset="utf-8">
   <title>Admin - Add Post</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+  <!-- <link rel="stylesheet" href="../style/normalize.css">
+  <link rel="stylesheet" href="../style/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
   <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
   <script>
           tinymce.init({
@@ -91,13 +92,13 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 
 	<form action='' method='post'>
 
-		<p><label>Title</label><br />
+		<p><label>Give the post a catchy Title</label><br />
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
 
-		<p><label>Description</label><br />
+		<p><label>Describe your post here</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>
 
-		<p><label>Content</label><br />
+		<p><label>Add contents to the post</label><br />
 		<textarea name='postCont' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postCont'];}?></textarea></p>
 
 		<p><input type='submit' name='submit' value='Submit'></p>

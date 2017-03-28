@@ -1,27 +1,23 @@
 #wrapper {
-	margin:0;
-	position: absolute;
-	left: 20;
-	top: 50;
-	width:900px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width:80%;
 }
 #head{
 	margin: 0;
 	font-size: 4em;
-	font-family: tahoma;
+	font-family: 'Lora', serif;
 }
 #desc{
 	font-family: tahoma;
 }
-#ss {
+#title {
 	font-family: tahoma;
 	color: red;
 }
 #date{
 	font-family: tahoma;
-}
-body{
-	background-color: white;
 }
 
 #details{
@@ -29,12 +25,16 @@ body{
 	color: blue;
 }
 
-
 #login {
+	position: absolute;
+	left: 30%;
+	top: 100px;
 	border: 1px solid #AEAEAE;
-	margin: 100px auto 0;
+	margin: auto;
 	padding: 0;
-	width: 300px;
+	width: 40%;
+	height: 200px;
+	background-color: #DCDCDC;
 }
 
 #adminmenu {
@@ -45,6 +45,15 @@ body{
 	float: left;
 	list-style: none;
 	margin-right: 20px;
+	font-size: 1.1em;
+}
+
+#content{
+	font-size: 3em;
+}
+
+#btn{
+	background-color: #00BDBA; 
 }
 
 .clear {
@@ -52,10 +61,15 @@ body{
 }
 
 .error {
-	padding: 0.75em;
-	margin: 0.75em;
+	position: absolute;
+	left: 17%;
+	top: -40px;
+	padding: 0.2em;
+	margin-top: 70px;
+	margin-left: 230px;
+	margin-bottom: 0;
 	border: 1px solid #990000;
-	max-width: 400px;
+	width: 30%;
 	color: #990000;
 	background-color: #FDF0EB;
 	-moz-border-radius: 0.5em;
@@ -70,8 +84,6 @@ li{
 }
 
 a {
-	color: black;
-	
 	text-decoration: none;
 }
 
@@ -85,7 +97,7 @@ form input {
 	margin: 2px;
 }
 
-table {width:98%; text-align:left; border:1px solid #DDDDDD; font-size:12px; color:#000;background:#fff; margin-bottom:10px;}
+table {width:98%; text-align:left; border:1px solid #DDDDDD; font-size:1.2em; color:#000; background:#fff; margin-bottom:10px;}
 table th {background-color:#E5E5E5; border:1px solid #BBBBBB; padding:3px 6px; font-weight:normal; color:#000;}
 table tr td {border:1px solid #DDDDDD; padding:5px 6px;}
 table tr.alt td {background-color:#E2E2E2;}

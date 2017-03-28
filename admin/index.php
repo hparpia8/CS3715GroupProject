@@ -13,7 +13,7 @@ if(isset($_GET['delpost'])){
 
 	header('Location: index.php?action=deleted');
 	exit;
-} 
+}
 
 ?>
 <!doctype html>
@@ -21,8 +21,9 @@ if(isset($_GET['delpost'])){
 <head>
   <meta charset="utf-8">
   <title>Admin</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+  <!-- <link rel="stylesheet" href="../style/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="../style/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="../style/new.css">
   <script language="JavaScript" type="text/javascript">
   function delpost(id, title)
   {
@@ -46,7 +47,7 @@ if(isset($_GET['delpost'])){
 	} 
 	?>
 
-	<table>
+	<table class="tbl">
 	<tr>
 		<th>Title</th>
 		<th>Date</th>

@@ -9,8 +9,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 <head>
   <meta charset="utf-8">
   <title>Admin - Edit User</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
 </head>
 <body>
 

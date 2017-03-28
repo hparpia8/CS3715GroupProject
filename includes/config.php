@@ -3,7 +3,7 @@ ob_start();
 session_start();
 
 //database credentials
-define('DBHOST','localhost');
+define('DBHOST','127.0.0.1');
 define('DBUSER','root');
 define('DBPASS','root');
 define('DBNAME','blog');

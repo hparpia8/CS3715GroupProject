@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Blog</title>
-    <!-- <link rel="stylesheet" href="style/normalize.css"> -->
-    <link rel="stylesheet" href="style/new.css">
+    
+	<link rel="stylesheet" href="style/main.css?version=1">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 				while($row = $stmt->fetch()){
 					
 					echo '<div id="desc" >';
-						echo '<h1><a id="ss" href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
+						echo '<h1 ><a id="title" href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
 						echo '<p id="date">Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
 						echo '<p>'.$row['postDesc'].'</p>';				
 						echo '<p><a id="details" href="viewpost.php?id='.$row['postID'].'">Read More</a></p>';				
@@ -35,5 +35,7 @@
 		?>
 
 	</div>
+
+
 </body>
 </html>
